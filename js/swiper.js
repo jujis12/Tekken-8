@@ -7,10 +7,6 @@ var mySwiper = new Swiper(".mySwiper", {
 });
 var mySwiper2 = new Swiper(".mySwiper2", {
     loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
     thumbs: {
         swiper: mySwiper,
     },

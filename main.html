@@ -7,9 +7,11 @@
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/main.css" />
         <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/swiper.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./js/swiper.js" defer></script>
+        <script src="./js/swiper2.js" defer></script>
     </head>
     <body>
         <header id="header">
@@ -36,11 +38,11 @@
                     <h2><img src="/img/header-banner.png" alt="" /></h2>
                     <div class="visual-main-title">
                         <img src="/img/Main-title.png" alt="" />
-                        <img src="/img/Main-title-sub.png" alt="" />
+                        <figure class="subsec"><img src="/img/Main-title-sub.png" alt="" /></figure>
                     </div>
                     <div class="visual-sub-title">
                         <img src="/img/Sub-title.png" alt="" />
-                        <img src="/img/sub-title2.png" alt="" />
+                        <figure class="subtitle"><img src="/img/sub-title2.png" alt="" /></figure>
                     </div>
                     <div class="visual-btn">
                         <a href="#">
@@ -134,6 +136,41 @@
                         <!-- 썸네일 추가 -->
                         <div class="swiper-slide"><img src="./img/playerble-char/Kazuya.webp" alt="" /></div>
                         <div class="swiper-slide"><img src="./img/playerble-char/Low.webp" alt="" /></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 캐릭터 트레일러 스와이퍼 // End -->
+            <div class="inner">
+                <!-- Slider main container -->
+                <div class="swiper charSwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./img/Standing-char/jin-kajama.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="./img/Standing-char/Kazuya-Mishima.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="./img/Standing-char/Paul-Phoenix.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="./img/Standing-char/Marshall-Law.png" alt="" /></div>
+                        <div class="swiper-slide">
+                            <img src="./img/Standing-char/Nina-Williams-sunglass.png" alt="" />
+                        </div>
+                        <div class="swiper-slide"><img src="./img/Standing-char/Jack-8.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="./img/Standing-char/King.png" alt="" /></div>
+
+                        <!-- 비디오 추가 url -->
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div thumbsSlider="" class="swiper charSwiper2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><b>진 카자마</b></div>
+                        <div class="swiper-slide"><b>미시마 카즈야</b></div>
+                        <div class="swiper-slide"><b>폴 피닉스</b></div>
+                        <div class="swiper-slide"><b>마샬 로우</b></div>
+                        <div class="swiper-slide"><b>니나 윌리엄스</b></div>
+                        <div class="swiper-slide"><b>Jack-8</b></div>
+                        <div class="swiper-slide"><b>킹</b></div>
                     </div>
                 </div>
             </div>
