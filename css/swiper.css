@@ -3,9 +3,6 @@ body {
     color: #fff;
 }
 
-.inner {
-    /* background: #ff5; */
-}
 .swiper {
     width: 100%;
     height: 100%;
@@ -14,7 +11,7 @@ body {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +26,7 @@ body {
 
 .swiper {
     width: 100%;
-    height: 300px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
