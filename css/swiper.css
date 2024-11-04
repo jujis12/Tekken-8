@@ -52,7 +52,7 @@ body {
     height: 100%;
     opacity: 0.4;
     cursor: pointer;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .mySwiper .swiper-slide-thumb-active {
@@ -74,4 +74,25 @@ body {
 }
 .Standing-char .charSwiper .swiper-wrapper img {
     object-fit: contain;
+}
+.charSwiper .swiper-slide {
+    opacity: 0.4;
+    cursor: pointer;
+}
+.charSwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    /* background-color: #fff; */
+    opacity: 0.5;
+    padding: 15px 5px;
+    border-radius: 20px;
+    color: white !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
 }
