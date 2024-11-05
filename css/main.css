@@ -33,13 +33,19 @@
 }
 .visual .visual-btn .btn-txt {
     text-decoration: none;
-    color: #fff;
-    background: red;
     display: inline-block;
     padding: 15px 40px;
     border-radius: 30px;
     font-weight: bold;
     text-align: center;
+    transition: 0.5s;
+    color: #000;
+    background: #fff;
+}
+.visual .visual-btn .btn-txt:hover {
+    padding: 15px 60px;
+    color: #fff;
+    background: #dd1d5b;
 }
 .info-text {
     background-color: rgba(0, 0, 0, 0.8);
@@ -83,7 +89,11 @@
     height: 736px;
     background: #fff;
 }
-
+.info-img iframe {
+    width: 1113px;
+    height: 736px;
+    border: 1px solid #fff;
+}
 .info-txt {
     width: 550px;
     display: flex;
@@ -92,12 +102,14 @@
 }
 
 .info-txt strong {
-    font-weight: 700;
-    font-size: 25px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #dd1d5b;
 }
 .info-txt p {
-    font-weight: 500;
-    font-size: 25px;
+    /* font-weight: 400; */
+    line-height: 2.5;
+    font-size: 23px;
 }
 
 /* Synopsis-info */
@@ -138,4 +150,94 @@
 
 .swiper-horizontal {
     height: auto;
+}
+.swiper-slide {
+}
+.swiper-slide a {
+    text-decoration: none;
+}
+.swiper-slide .btn-swiper {
+    display: block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    clear: both;
+    position: relative;
+    top: -10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide .btn-swiper:hover {
+    background-color: red;
+    padding: 15px 45px;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .info-txt {
+        width: 100%;
+    }
+    .info-wrap {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .info-img {
+        width: 100%;
+        height: 350px;
+        background: none;
+    }
+
+    .info-img iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Synopsis-info figure {
+        width: 100%;
+        height: 100%;
+    }
+    .Synopsis-info img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .visual .visual-main-title {
+        width: 310px;
+        top: 15%;
+        left: 7%;
+    }
+    .visual .subsec {
+        margin-left: 35px;
+    }
+    .visual .visual-sub-title {
+        width: 240px;
+        top: 25%;
+        left: 12%;
+    }
+    .visual .visual-btn {
+        width: 150px;
+        top: 40%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .visual-btn a:first-child {
+        display: none;
+    }
 }

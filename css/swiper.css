@@ -9,14 +9,30 @@ body {
 }
 
 .swiper-slide {
+    /* display: flex; */
     text-align: center;
     font-size: 18px;
     /* background: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 1000px;
+    margin: 0 auto;
 }
+.swiper-slide b {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 2;
+    font-size: 17px;
 
+    overflow: hidden;
+}
+.swiper-slide span {
+    font-weight: 800;
+    font-size: 25px;
+}
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -25,6 +41,7 @@ body {
 }
 
 .swiper {
+    display: block;
     width: 100%;
     height: auto;
     margin-left: auto;
@@ -95,4 +112,10 @@ body {
 .swiper-button-next:after {
     font-size: 1.1rem !important;
     font-weight: 600 !important;
+}
+
+@media (max-width: 1024px) {
+    .charSwiper .swiper-slide {
+        opacity: 1;
+    }
 }

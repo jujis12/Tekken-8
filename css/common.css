@@ -1,5 +1,9 @@
 @charset 'utf-8';
 
+:root {
+    --main-color: #dd1d5b;
+}
+
 body {
     font: 16px/1.6 sans-serif;
     font-family: "Noto Sans KR", sans-serif;
@@ -20,6 +24,9 @@ section {
 
 .logo {
     width: 132px;
+}
+.f-logo {
+    width: 130px;
 }
 
 .header-wrap {
@@ -52,4 +59,40 @@ section {
     background: rgba(217, 217, 217, 1);
     color: #000;
     font-size: 20px;
+}
+
+.m-menu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .inner {
+        width: 90%;
+    }
+    .header-wrap {
+        gap: 0;
+        justify-content: space-between;
+        /* border-bottom: 1px solid #fff; */
+    }
+    .line {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .gnb {
+        display: none;
+    }
+    button {
+        background: none;
+        border: none;
+        color: var(--main-color);
+        font-size: 22px;
+    }
+    .m-menu {
+        display: block;
+    }
+    .m-btn2 {
+        display: none;
+    }
 }
