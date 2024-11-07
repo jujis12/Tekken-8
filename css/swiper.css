@@ -119,3 +119,26 @@ body {
         opacity: 1;
     }
 }
+
+@media (max-width: 600px) {
+    .Standing-char .charSwiper .swiper-wrapper img {
+        transform: translateX(40%);
+    }
+    .swiper-slide span {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .swiper-slide b {
+        font-size: 15px;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 230px;
+    }
+    .video-box iframe {
+        display: block;
+        width: 490px;
+        aspect-ratio: 16/9;
+        height: 320px;
+    }
+}

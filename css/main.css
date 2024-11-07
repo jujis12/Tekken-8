@@ -240,4 +240,47 @@ img {
     .visual-btn a:first-child {
         display: none;
     }
+    .visual .visual-btn .btn-txt {
+        display: none;
+    }
+    .visual .visual-main-title {
+        width: 180px;
+        top: 14%;
+        left: 5%;
+    }
+    .visual .subsec {
+        margin-top: -13px;
+        margin-left: 10px;
+        width: 130px;
+    }
+    .visual .visual-sub-title {
+        width: 140px;
+        top: 20%;
+        left: 9%;
+    }
+    .info-txt strong {
+        font-size: 20px;
+    }
+    .info-txt p {
+        font-weight: 500;
+        font-size: 10px;
+    }
+
+    /* 시놉시스 */
+    .Synopsis-info h3 {
+        font-size: 18.5px;
+        font-weight: 800;
+    }
+    .Synopsis-info p {
+        font-size: 15px;
+    }
+    .ytp-cued-thumbnail-overlay-image {
+        width: 100%;
+    }
+    .Standing-char .charSwiper .swiper-wrapper img {
+        width: 290px;
+    }
+    .f-info .f-txt {
+        font-size: 13px;
+    }
 }

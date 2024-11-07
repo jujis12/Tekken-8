@@ -1,0 +1,178 @@
+@charset 'utf-8';
+
+.Character-wrap {
+    display: flex;
+}
+
+.Character-img {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Character-img figure img {
+    width: 455px;
+}
+
+.Character-img strong {
+    font-weight: 700;
+    font-size: 30px;
+}
+.Character-info {
+    line-height: 3;
+}
+.name strong {
+    font-weight: 700;
+    font-size: 60px;
+    /* margin-bottom: 70px; */
+}
+
+.name p {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.txt-info p {
+    font-size: 25px;
+    line-height: 2;
+}
+
+/* Character-video */
+
+.dim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none; /* for jQurey */
+}
+.wrap {
+    /* background: #ff0; */
+}
+.video-wrap {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0px solid #ffffff;
+    background: #000;
+    opacity: 0;
+    transition: 0.4s;
+
+    pointer-events: none;
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+}
+.video-wrap.active {
+    /* 팝업 박스조절 */
+    width: 1000px;
+    top: 50%;
+    opacity: 1;
+
+    pointer-events: initial;
+    user-select: initial;
+}
+
+.video {
+    width: 50%;
+    aspect-ratio: 16/9;
+}
+
+.video iframe {
+    width: 130%;
+    height: 130%;
+    border: none;
+}
+
+.caption {
+    background: #000;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    width: 50%;
+}
+
+.btn-close {
+    position: absolute;
+    top: -5px;
+    right: -70px;
+    width: 70px;
+    height: 70px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-list {
+    /* background: #5f5; */
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-list li {
+    flex: 1 1 20%;
+    border: 5px solid #000;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* cup */
+    color: #000;
+    background: #fff;
+}
+
+.video-list li p {
+    display: none;
+}
+
+/* Force */
+
+.Force-wrap {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.Force-box {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.Force-box strong {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.Level-box {
+    display: flex;
+    /* gap: 20px; */
+}
+.Level {
+    width: 280px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.Level1 {
+    background: #f5f;
+}
+.Level2 {
+    background: #f5f;
+}

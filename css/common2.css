@@ -1,0 +1,144 @@
+@charset 'utf-8';
+
+:root {
+    --main-color: #dd1d5b;
+}
+
+body {
+    font: 16px/1.6 sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 50px 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inner {
+    width: 1680px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 132px;
+}
+
+.f-logo {
+    width: 130px;
+}
+
+.header-wrap {
+    margin-top: 20px;
+    display: flex;
+    gap: 85px;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.gnb {
+    align-items: center;
+    display: flex;
+    gap: 35px;
+    color: #fff;
+}
+
+.gnb a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 1px solid #000;
+}
+.line {
+    margin-top: 10px;
+    width: 680px;
+    border-bottom: 1px solid #fff;
+}
+.gnb a:hover {
+    color: var(--main-color);
+    /* border-color: var(--main-color); */
+}
+.gnb a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    opacity: 0;
+    border: 1px solid var(--main-color);
+    transition: 0.5s;
+}
+.gnb a:hover::before {
+    opacity: 1;
+}
+.gnb a::after {
+    content: ""; /* ct */
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%); /* trftx */
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: var(--main-color);
+    opacity: 0; /* op0 */
+    transition: cubic-bezier(0, 0.73, 0.22, 1.3) 0.4s; /* trs.4s */
+}
+.gnb a:hover::after {
+    top: -20px;
+    opacity: 1; /* op1 */
+}
+
+#footer {
+    padding: 30px;
+    background: rgba(217, 217, 217, 1);
+    color: #000;
+    font-size: 20px;
+}
+
+.m-menu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .inner {
+        width: 90%;
+    }
+    .header-wrap {
+        gap: 0;
+        justify-content: space-between;
+        /* border-bottom: 1px solid #fff; */
+    }
+    .line {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .gnb {
+        display: none;
+    }
+    button {
+        background: none;
+        border: none;
+        color: var(--main-color);
+        font-size: 22px;
+    }
+    .m-menu {
+        display: block;
+    }
+    .m-btn2 {
+        display: none;
+    }
+}
